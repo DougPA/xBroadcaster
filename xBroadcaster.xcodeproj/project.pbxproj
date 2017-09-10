@@ -185,7 +185,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"${USER_LIBRARY_DIR}\"\necho \"${PROJECT_DIR}\"\ncp -r \"${USER_LIBRARY_DIR}/Frameworks/xLib6000.framework\" \"${PROJECT_DIR}\"\n";
+			shellScript = "echo \"Copy xLib6000.framework from ${USER_LIBRARY_DIR} -> ${PROJECT_DIR}\"\ncp -r \"${USER_LIBRARY_DIR}/Frameworks/xLib6000.framework\" \"${PROJECT_DIR}\"\n";
 		};
 		91A6E3C41EDA25670099CC2E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
