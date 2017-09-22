@@ -2,7 +2,7 @@
 Simulates the presence of multiple FlexRadio (TM) 6000 series radios on
 your network.
 
-Builds on macOS 10.12.6 using XCode 8.3.3 using Swift 3 with a Deployment 
+Builds on macOS 10.12.6 using XCode 9 using Swift 3.2 with a Deployment
 Target of macOS 10.10
 
 ==========================================================================
@@ -11,9 +11,9 @@ Please see the xBroadcaster.pdf file in this project or run the app and
 click the HELP menu choice.
 
 
-***** IMPORTANT NOTE *****
-To compile this application, you must have xLib6000.framework in a location
-where XCode can reference the framework (typically ~/Library/Frameworks).
+***** IMPORTANT NOTE ***** To compile this application, you must have
+xLib6000.framework in the same folder  as the xCode project file (xBroadcaster.xcodeproj)
+( i.e. in ${PROJECT_DIR} )
 
 
 A compiled RELEASE build executable (which has xLib6000.framework embedded in it)
