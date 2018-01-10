@@ -64,8 +64,8 @@
 				91BCD47C1F40991900ACD2A3 /* xBroadcaster.pdf */,
 			);
 			name = Documentation;
-			path = FlexBroadcaster;
-			sourceTree = "<group>";
+			path = xBroadcaster/Documentation;
+			sourceTree = SOURCE_ROOT;
 		};
 		91E4A9F51E19DF4A00666DB3 = {
 			isa = PBXGroup;
@@ -98,9 +98,8 @@
 				91BCD4441F408B2100ACD2A3 /* Main.storyboard */,
 				91BCD43B1F408AFF00ACD2A3 /* ViewController.swift */,
 			);
-			name = xBroadcaster;
-			path = FlexBroadcaster;
-			sourceTree = "<group>";
+			path = xBroadcaster;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -109,7 +108,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91E4AA0D1E19DF4A00666DB3 /* Build configuration list for PBXNativeTarget "xBroadcaster" */;
 			buildPhases = (
-				9190AB361F657FC000C65069 /* ShellScript */,
 				91E4A9FA1E19DF4A00666DB3 /* Sources */,
 				91E4A9FB1E19DF4A00666DB3 /* Frameworks */,
 				91E4A9FC1E19DF4A00666DB3 /* Resources */,
@@ -174,19 +172,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9190AB361F657FC000C65069 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "echo \"Project folder = ${PROJECT_DIR}\"\nif [ \"${PROJECT_DIR}\" == \"/Users/Doug/Dropbox/Code (Current)/xBroadcaster-master\" ] ; then\n    echo \"Copy xLib6000.framework from ${USER_LIBRARY_DIR} -> ${PROJECT_DIR}\"\n    cp -r \"${USER_LIBRARY_DIR}/Frameworks/xLib6000.framework\" \"${PROJECT_DIR}\"\nfi";
-		};
 		91A6E3C41EDA25670099CC2E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
