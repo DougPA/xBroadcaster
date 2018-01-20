@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import xLib6000
 
 // ------------------------------------------------------------------------------
 // MARK: - ViewController Class implementation

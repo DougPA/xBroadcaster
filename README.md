@@ -2,7 +2,7 @@
 Simulates the presence of multiple FlexRadio (TM) 6000 series radios on
 your network.
 
-Builds on macOS 10.13 using XCode 9 using Swift 3.2 with a Deployment
+Builds on macOS 10.13.2 using XCode 9.2 using Swift 4 with a Deployment
 Target of macOS 10.10
 
 ==========================================================================

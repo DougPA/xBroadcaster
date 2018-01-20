@@ -31,14 +31,14 @@ class HelpViewController: NSViewController {
         
         super.viewWillAppear()
         
-        view.window!.setFrameUsingName(kAutosaveName)
+      view.window!.setFrameUsingName( NSWindow.FrameAutosaveName(rawValue: kAutosaveName))
     }
     
     override func viewWillDisappear() {
         
         super.viewWillDisappear()
         
-        view.window!.saveFrame(usingName: kAutosaveName)
+        view.window!.saveFrame(usingName: NSWindow.FrameAutosaveName(rawValue: kAutosaveName))
     }
     
 }

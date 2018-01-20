@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9190AB381F65859600C65069 /* xLib6000.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9190AB371F65859600C65069 /* xLib6000.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91BCD4361F408AD600ACD2A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BCD4341F408AD600ACD2A3 /* AppDelegate.swift */; };
 		91BCD43D1F408AFF00ACD2A3 /* BroadcasterDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BCD4381F408AFF00ACD2A3 /* BroadcasterDefaults.swift */; };
 		91BCD43E1F408AFF00ACD2A3 /* FlexBroadcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BCD4391F408AFF00ACD2A3 /* FlexBroadcast.swift */; };
@@ -16,6 +15,19 @@
 		91BCD4431F408B0E00ACD2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91BCD4421F408B0E00ACD2A3 /* Assets.xcassets */; };
 		91BCD4461F408B2100ACD2A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BCD4441F408B2100ACD2A3 /* Main.storyboard */; };
 		91BCD47E1F40991900ACD2A3 /* xBroadcaster.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 91BCD47C1F40991900ACD2A3 /* xBroadcaster.pdf */; };
+		91F6E0472013C43000C9522A /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E0452013C43000C9522A /* GCDAsyncUdpSocket.m */; };
+		91F6E0552013C43C00C9522A /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E0492013C43C00C9522A /* Log.swift */; };
+		91F6E0562013C43C00C9522A /* RadioParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E04A2013C43C00C9522A /* RadioParameters.swift */; };
+		91F6E0572013C43C00C9522A /* Filters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91F6E04B2013C43C00C9522A /* Filters.plist */; };
+		91F6E0582013C43C00C9522A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E04C2013C43C00C9522A /* Extensions.swift */; };
+		91F6E0592013C43C00C9522A /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E04D2013C43C00C9522A /* Notification.swift */; };
+		91F6E05A2013C43C00C9522A /* FlexErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E04E2013C43C00C9522A /* FlexErrors.swift */; };
+		91F6E05B2013C43C00C9522A /* RadioFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E0502013C43C00C9522A /* RadioFactory.swift */; };
+		91F6E05C2013C43C00C9522A /* UdpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E0512013C43C00C9522A /* UdpManager.swift */; };
+		91F6E05D2013C43C00C9522A /* TcpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E0522013C43C00C9522A /* TcpManager.swift */; };
+		91F6E05E2013C43C00C9522A /* Vita.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E0532013C43C00C9522A /* Vita.swift */; };
+		91F6E05F2013C43C00C9522A /* Pinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E0542013C43C00C9522A /* Pinger.swift */; };
+		91F6E0622013C4E700C9522A /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E0612013C4E700C9522A /* GCDAsyncSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +37,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9190AB381F65859600C65069 /* xLib6000.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,7 +44,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9190AB371F65859600C65069 /* xLib6000.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = xLib6000.framework; sourceTree = "<group>"; };
 		91BCD4341F408AD600ACD2A3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = xBroadcaster/AppDelegate.swift; sourceTree = "<group>"; };
 		91BCD4351F408AD600ACD2A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = xBroadcaster/Info.plist; sourceTree = "<group>"; };
 		91BCD4381F408AFF00ACD2A3 /* BroadcasterDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BroadcasterDefaults.swift; path = xBroadcaster/BroadcasterDefaults.swift; sourceTree = SOURCE_ROOT; };
@@ -45,6 +55,22 @@
 		91BCD47C1F40991900ACD2A3 /* xBroadcaster.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = xBroadcaster.pdf; path = xBroadcaster/Documentation/xBroadcaster.pdf; sourceTree = SOURCE_ROOT; };
 		91BCD4931F40AF7400ACD2A3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		91E4A9FE1E19DF4A00666DB3 /* xBroadcaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xBroadcaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F6E0362013C17800C9522A /* xBroadcaster-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xBroadcaster-Bridging-Header.h"; sourceTree = "<group>"; };
+		91F6E0452013C43000C9522A /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		91F6E0462013C43000C9522A /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		91F6E0492013C43C00C9522A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		91F6E04A2013C43C00C9522A /* RadioParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioParameters.swift; sourceTree = "<group>"; };
+		91F6E04B2013C43C00C9522A /* Filters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Filters.plist; sourceTree = "<group>"; };
+		91F6E04C2013C43C00C9522A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		91F6E04D2013C43C00C9522A /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		91F6E04E2013C43C00C9522A /* FlexErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexErrors.swift; sourceTree = "<group>"; };
+		91F6E0502013C43C00C9522A /* RadioFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioFactory.swift; sourceTree = "<group>"; };
+		91F6E0512013C43C00C9522A /* UdpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdpManager.swift; sourceTree = "<group>"; };
+		91F6E0522013C43C00C9522A /* TcpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TcpManager.swift; sourceTree = "<group>"; };
+		91F6E0532013C43C00C9522A /* Vita.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vita.swift; sourceTree = "<group>"; };
+		91F6E0542013C43C00C9522A /* Pinger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pinger.swift; sourceTree = "<group>"; };
+		91F6E0602013C4E700C9522A /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		91F6E0612013C4E700C9522A /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +96,9 @@
 		91E4A9F51E19DF4A00666DB3 = {
 			isa = PBXGroup;
 			children = (
-				9190AB371F65859600C65069 /* xLib6000.framework */,
+				91F6E0482013C43C00C9522A /* Misc */,
+				91F6E04F2013C43C00C9522A /* Networking */,
+				91F6E0442013C43000C9522A /* CocoaAsyncSocket */,
 				91BCD4931F40AF7400ACD2A3 /* README.md */,
 				91BCD4341F408AD600ACD2A3 /* AppDelegate.swift */,
 				91BCD4351F408AD600ACD2A3 /* Info.plist */,
@@ -91,6 +119,7 @@
 		91E4AA001E19DF4A00666DB3 /* xBroadcaster */ = {
 			isa = PBXGroup;
 			children = (
+				91F6E0362013C17800C9522A /* xBroadcaster-Bridging-Header.h */,
 				91BCD4421F408B0E00ACD2A3 /* Assets.xcassets */,
 				91BCD4381F408AFF00ACD2A3 /* BroadcasterDefaults.swift */,
 				91BCD4391F408AFF00ACD2A3 /* FlexBroadcast.swift */,
@@ -100,6 +129,45 @@
 			);
 			path = xBroadcaster;
 			sourceTree = SOURCE_ROOT;
+		};
+		91F6E0442013C43000C9522A /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				91F6E0602013C4E700C9522A /* GCDAsyncSocket.h */,
+				91F6E0612013C4E700C9522A /* GCDAsyncSocket.m */,
+				91F6E0452013C43000C9522A /* GCDAsyncUdpSocket.m */,
+				91F6E0462013C43000C9522A /* GCDAsyncUdpSocket.h */,
+			);
+			name = CocoaAsyncSocket;
+			path = xBroadcaster/CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		91F6E0482013C43C00C9522A /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				91F6E0492013C43C00C9522A /* Log.swift */,
+				91F6E04A2013C43C00C9522A /* RadioParameters.swift */,
+				91F6E04B2013C43C00C9522A /* Filters.plist */,
+				91F6E04C2013C43C00C9522A /* Extensions.swift */,
+				91F6E04D2013C43C00C9522A /* Notification.swift */,
+				91F6E04E2013C43C00C9522A /* FlexErrors.swift */,
+			);
+			name = Misc;
+			path = xBroadcaster/Misc;
+			sourceTree = "<group>";
+		};
+		91F6E04F2013C43C00C9522A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				91F6E0502013C43C00C9522A /* RadioFactory.swift */,
+				91F6E0512013C43C00C9522A /* UdpManager.swift */,
+				91F6E0522013C43C00C9522A /* TcpManager.swift */,
+				91F6E0532013C43C00C9522A /* Vita.swift */,
+				91F6E0542013C43C00C9522A /* Pinger.swift */,
+			);
+			name = Networking;
+			path = xBroadcaster/Networking;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -130,12 +198,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Douglas Adams";
 				TargetAttributes = {
 					91E4A9FD1E19DF4A00666DB3 = {
 						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -163,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F6E0572013C43C00C9522A /* Filters.plist in Resources */,
 				91BCD4431F408B0E00ACD2A3 /* Assets.xcassets in Resources */,
 				91BCD47E1F40991900ACD2A3 /* xBroadcaster.pdf in Resources */,
 				91BCD4461F408B2100ACD2A3 /* Main.storyboard in Resources */,
@@ -193,10 +262,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				91BCD4401F408AFF00ACD2A3 /* ViewController.swift in Sources */,
+				91F6E05E2013C43C00C9522A /* Vita.swift in Sources */,
+				91F6E0582013C43C00C9522A /* Extensions.swift in Sources */,
+				91F6E0552013C43C00C9522A /* Log.swift in Sources */,
 				91BCD43E1F408AFF00ACD2A3 /* FlexBroadcast.swift in Sources */,
+				91F6E0622013C4E700C9522A /* GCDAsyncSocket.m in Sources */,
+				91F6E05B2013C43C00C9522A /* RadioFactory.swift in Sources */,
+				91F6E0562013C43C00C9522A /* RadioParameters.swift in Sources */,
+				91F6E05A2013C43C00C9522A /* FlexErrors.swift in Sources */,
 				91BCD4361F408AD600ACD2A3 /* AppDelegate.swift in Sources */,
+				91F6E0592013C43C00C9522A /* Notification.swift in Sources */,
 				91BCD43D1F408AFF00ACD2A3 /* BroadcasterDefaults.swift in Sources */,
+				91F6E0472013C43000C9522A /* GCDAsyncUdpSocket.m in Sources */,
+				91F6E05F2013C43C00C9522A /* Pinger.swift in Sources */,
+				91F6E05C2013C43C00C9522A /* UdpManager.swift in Sources */,
 				91BCD43F1F408AFF00ACD2A3 /* HelpViewController.swift in Sources */,
+				91F6E05D2013C43C00C9522A /* TcpManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +304,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -231,7 +314,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -272,7 +359,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -280,7 +369,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -327,10 +420,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.k3tzr.xBroadcaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "xBroadcaster/xBroadcaster-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -356,9 +449,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.k3tzr.xBroadcaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "xBroadcaster/xBroadcaster-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

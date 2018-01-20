@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import xLib6000
 
 // ------------------------------------------------------------------------------
 // MARK: - FlexBroadcast Class implementation
@@ -69,7 +68,7 @@ public final class FlexBroadcast {
         _broadcastTimer = DispatchSource.makeTimerSource(flags: [.strict], queue: _broadcastQ)
         
         // Set timer for 1 second with 100 millisecond leeway
-        _broadcastTimer.scheduleRepeating(deadline: DispatchTime.now(), interval: .seconds(1), leeway: .milliseconds(100))      // Every second +/- 10%
+      _broadcastTimer.schedule(deadline: DispatchTime.now(), repeating: .seconds(1), leeway: .milliseconds(100))      // Every second +/- 10%
         
         // create a Discovery packet from my payload (as Data)
         _broadcast = Vita.discovery(payload: _payloads[_index])
